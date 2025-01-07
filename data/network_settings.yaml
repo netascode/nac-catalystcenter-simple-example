@@ -1,0 +1,48 @@
+---
+catalyst_center:
+  network_settings:
+    ip_pools:
+      - name: CORP_GLOBAL
+        ip_address_space: IPv4
+        ip_pool_cidr: 10.201.0.0/16
+        dhcp_servers:
+          - 10.201.0.1
+        dns_servers:
+          - 10.201.0.1
+        ip_pools_reservations:
+          - name: CORP_POOL
+            prefix_length: 24
+            subnet: 10.201.1.0
+      - name: GUEST_GLOBAL
+        ip_address_space: IPv4
+        ip_pool_cidr: 10.202.0.0/16
+        dhcp_servers:
+          - 10.202.0.1
+        dns_servers:
+          - 10.202.0.1
+        ip_pools_reservations:
+          - name: GUEST_POOL
+            prefix_length: 24
+            subnet: 10.202.1.0
+      - name: BYOD_GLOBAL
+        ip_address_space: IPv4
+        ip_pool_cidr: 10.203.0.0/16
+        dhcp_servers:
+          - 10.203.0.1
+        dns_servers:
+          - 10.203.0.1
+        ip_pools_reservations:
+          - name: BYOD_POOL
+            prefix_length: 24
+            subnet: 10.203.1.0
+      - name: UNDERLAY_GLOBAL
+        ip_address_space: IPv4
+        ip_pool_cidr: 10.200.0.0/16
+        dhcp_servers:
+          - 10.200.0.1
+        dns_servers:
+          - 10.200.0.1
+        ip_pools_reservations:
+          - name: UNDERLAY_POOL
+            prefix_length: 24
+            subnet: 10.200.1.0

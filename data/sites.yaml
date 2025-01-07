@@ -1,0 +1,25 @@
+---
+catalyst_center:
+  sites:
+    areas:
+      - name: United States
+      - name: Golden Hills Campus
+        parent_name: Global/United States
+    buildings:
+      - name: Sunset Tower
+        latitude: 34.099
+        longitude: -118.366
+        address: 8358 Sunset Blvd, Los Angeles, CA 90069
+        parent_name: Global/United States/Golden Hills Campus
+        ip_pools_reservations:
+          - CORP_POOL
+          - GUEST_POOL
+          - BYOD_POOL
+          - UNDERLAY_POOL
+    floors:
+      - name: FLOOR_1
+        floor_number: 1
+        parent_name: Global/United States/Golden Hills Campus/Sunset Tower
+      - name: FLOOR_2
+        floor_number: 2
+        parent_name: Global/United States/Golden Hills Campus/Sunset Tower
