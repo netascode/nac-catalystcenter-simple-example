@@ -3,7 +3,14 @@ catalyst_center:
   sites:
     areas:
       - name: United States
+        parent_name: Global
       - name: Golden Hills Campus
+        parent_name: Global/United States
+      - name: Lakefront Tower
+        parent_name: Global/United States
+      - name: Oceanfront Mansion
+        parent_name: Global/United States
+      - name: Desert Oasis Branch
         parent_name: Global/United States
     buildings:
       - name: Sunset Tower
@@ -12,10 +19,40 @@ catalyst_center:
         address: 8358 Sunset Blvd, Los Angeles, CA 90069
         parent_name: Global/United States/Golden Hills Campus
         ip_pools_reservations:
-          - CORP_POOL
-          - GUEST_POOL
-          - BYOD_POOL
-          - UNDERLAY_POOL
+          - ST_CORP
+          - ST_TECH
+          - ST_GUEST
+          - ST_BYOD
+      - name: Windy City Plaza
+        latitude: 41.878
+        longitude: -87.630
+        address: 233 S Wacker Dr, Chicago, IL 60606
+        parent_name: Global/United States/Lakefront Tower
+        ip_pools_reservations:
+          - WCP_CORP
+          - WCP_TECH
+          - WCP_GUEST
+          - WCP_BYOD
+      - name: Art Deco Mansion
+        latitude: 25.782
+        longitude: -80.133
+        address: 123 Ocean Drive, Miami Beach, FL 33139
+        parent_name: Global/United States/Oceanfront Mansion
+        ip_pools_reservations:
+          - ADM_CORP
+          - ADM_TECH
+          - ADM_GUEST
+          - ADM_BYOD
+      - name: Desert Oasis Tower
+        latitude: 33.448
+        longitude: -112.074
+        address: 1235 Cactus Ave, Phoenix, AZ 85001
+        parent_name: Global/United States/Desert Oasis Branch
+        ip_pools_reservations:
+          - DOT_CORP
+          - DOT_TECH
+          - DOT_GUEST
+          - DOT_BYOD
     floors:
       - name: FLOOR_1
         floor_number: 1
@@ -23,3 +60,15 @@ catalyst_center:
       - name: FLOOR_2
         floor_number: 2
         parent_name: Global/United States/Golden Hills Campus/Sunset Tower
+      - name: FLOOR_1
+        floor_number: 1
+        parent_name: Global/United States/Lakefront Tower/Windy City Plaza
+      - name: FLOOR_2
+        floor_number: 2
+        parent_name: Global/United States/Lakefront Tower/Windy City Plaza
+      - name: FLOOR_1
+        floor_number: 1
+        parent_name: Global/United States/Oceanfront Mansion/Art Deco Mansion
+      - name: FLOOR_1
+        floor_number: 1
+        parent_name: Global/United States/Desert Oasis Branch/Desert Oasis Tower
