@@ -13,7 +13,7 @@ provider "catalystcenter" {
 }
 
 module "catalyst_center" {
-  source  = "../terraform-catalystcenter-nac-catalystcenter"
+  source  = "git::https://www.github.com/netascode/terraform-catalystcenter-nac-catalystcenter?ref=dev"
 
   yaml_directories      = ["data/"]
 }
