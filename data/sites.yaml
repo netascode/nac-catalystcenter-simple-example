@@ -17,6 +17,7 @@ catalyst_center:
         latitude: 34.099
         longitude: -118.366
         address: 8358 Sunset Blvd, Los Angeles, CA 90069
+        country: United States
         parent_name: Global/United States/Golden Hills Campus
         ip_pools_reservations:
           - ST_CORP
@@ -27,6 +28,7 @@ catalyst_center:
         latitude: 41.878
         longitude: -87.630
         address: 233 S Wacker Dr, Chicago, IL 60606
+        country: United States
         parent_name: Global/United States/Lakefront Tower
         ip_pools_reservations:
           - WCP_CORP
@@ -37,6 +39,7 @@ catalyst_center:
         latitude: 25.782
         longitude: -80.133
         address: 123 Ocean Drive, Miami Beach, FL 33139
+        country: United States
         parent_name: Global/United States/Oceanfront Mansion
         ip_pools_reservations:
           - ADM_CORP
@@ -47,6 +50,7 @@ catalyst_center:
         latitude: 33.448
         longitude: -112.074
         address: 1235 Cactus Ave, Phoenix, AZ 85001
+        country: United States
         parent_name: Global/United States/Desert Oasis Branch
         ip_pools_reservations:
           - DOT_CORP
