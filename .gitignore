@@ -4,7 +4,6 @@
 
 ### dotenv ###
 .env
-.schema.yaml
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
@@ -417,9 +416,6 @@ site/
 
 # key
 key
-
-# Tests
-tests/
 
 # Pabot
 .pabotsuitenames
